@@ -8,12 +8,15 @@ class LoadingDots extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {frame: 1};
+  }
 
-    this.interval = setInterval(() => {
-      this.setState({
-        frame: this.state.frame + 1
-      });
-    }, this.props.interval);
+  componentDidMount() {
+    //TODO: this is throwing a setState error in the console
+    // this.interval = setInterval(() => {
+    //   this.setState({
+    //     frame: this.state.frame + 1
+    //   });
+    // }, this.props.interval);
   }
 
   componentWillMount() {
