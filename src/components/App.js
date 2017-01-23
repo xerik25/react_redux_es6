@@ -17,10 +17,10 @@ class App extends React.Component {
 function mapStateToProps(state, ownProps) {
   return {
     loading: state.ajaxCallsInProgress > 0
-  }
+  };
 }
 
-App.prototypes = {
+App.propTypes = {
   children: PropTypes.object.isRequired,
   loading: PropTypes.bool.isRequired
 };

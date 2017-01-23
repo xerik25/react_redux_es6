@@ -15,4 +15,8 @@ const Header = ({loading}) => {
   );
 };
 
+Header.propTypes = {
+  loading: React.PropTypes.bool
+};
+
 export default Header;
